@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: Tmpmail-code-tech # unique identifier
-    name: Tmp Email
+    name: 临时邮箱
     description: '临时邮箱' # default=empty
     url: 'https://mail.code-tech.us.kg' # URL to fetch
     method: GET # default=GET
@@ -25,7 +25,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: Banner-c0despace
-    name: banner.c0despace.uk
+    name: 导航页
     description: '导航页'
     url: 'https://banner.c0despace.uk'
     method: GET
@@ -34,7 +34,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: Github-Blog
-    name: Github BLog
+    name: Github 博客
     description: 'Github 博客'
     url: 'https://zywj0han9.github.io'
     method: GET
@@ -43,7 +43,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: CF-Blog-zywj0han9
-    name: Cloudflare BLog
+    name: Cloudflare 博客
     description: 'Cloudflare 博客'
     url: 'https://blog.zywj0han9.win'
     method: GET
