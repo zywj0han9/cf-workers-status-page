@@ -18,7 +18,7 @@ monitors:
   - id: mail-code-tech-us-uk # unique identifier
     name: Tmp Email
     description: 'Tmp Email for Personal' # default=empty
-    url: 'https://mail.code-tech.us.uk' # URL to fetch
+    url: 'https://mail.code-tech.us.kg' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -35,6 +35,7 @@ monitors:
 
   - id: github-blog
     name: Github BLog
+    description: 'Github pages Blog'
     url: 'https://zywj0han9.github.io'
     method: GET
     expectStatus: 200
@@ -43,6 +44,7 @@ monitors:
 
   - id: CF-blog
     name: Cloudflare BLog
+    description: 'Cloudflare pages Blog'
     url: 'https://blog.zywj0han9.win'
     method: GET
     expectStatus: 200
