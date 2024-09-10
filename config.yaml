@@ -1,52 +1,52 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  # url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 180 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: '所有系统正常运行'
+  notAllmonitorsOperational: '部分系统无法运行'
+  monitorLabelOperational: '运行'
+  monitorLabelNotOperational: '停止'
+  monitorLabelNoData: '没有数据'
+  dayInHistogramNoData: '没有数据'
+  dayInHistogramOperational: '全部正常'
+  dayInHistogramNotOperational: ' 事件' # xx incident(s) recorded
 
 monitors:
-  - id: mail-code-tech-us-uk # unique identifier
+  - id: Tmpmail-code-tech # unique identifier
     name: Tmp Email
-    description: 'Tmp Email for Personal' # default=empty
+    description: '临时邮箱' # default=empty
     url: 'https://mail.code-tech.us.kg' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: banner-c0despace-uk
+  - id: Banner-c0despace
     name: banner.c0despace.uk
-    description: 'Banner for personal'
+    description: '导航页'
     url: 'https://banner.c0despace.uk'
     method: GET
     expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: github-blog
+  - id: Github-Blog
     name: Github BLog
-    description: 'Github pages Blog'
+    description: 'Github 博客'
     url: 'https://zywj0han9.github.io'
     method: GET
     expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: CF-blog
+  - id: CF-Blog-zywj0han9
     name: Cloudflare BLog
-    description: 'Cloudflare pages Blog'
+    description: 'Cloudflare 博客'
     url: 'https://blog.zywj0han9.win'
     method: GET
     expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
     followRedirect: false # should fetch follow redirects, default=false
