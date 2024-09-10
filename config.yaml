@@ -5,20 +5,21 @@ settings:
   daysInHistogram: 180 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: '所有系统正常运行'
-  notAllmonitorsOperational: '部分系统无法运行'
-  monitorLabelOperational: '运行'
-  monitorLabelNotOperational: '停止'
-  monitorLabelNoData: '没有数据'
-  dayInHistogramNoData: '没有数据'
-  dayInHistogramOperational: '全部正常'
-  dayInHistogramNotOperational: ' 事件' # xx incident(s) recorded
-
+  # configurable texts across the status page
+  allmonitorsOperational: 'All Systems Operational'
+  notAllmonitorsOperational: 'Not All Systems Operational'
+  monitorLabelOperational: 'Operational'
+  monitorLabelNotOperational: 'Not Operational'
+  monitorLabelNoData: 'No data'
+  dayInHistogramNoData: 'No data'
+  dayInHistogramOperational: 'All good'
+  dayInHistogramNotOperational: 'Some checks failed'
+  
 monitors:
   - id: Tmpmail-code-tech # unique identifier
     name: 临时邮箱
     description: '临时邮箱' # default=empty
-    url: 'https://mail.code-tech.us.kg' # URL to fetch
+    url: 'https://mail.code-tech.us.kg/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -27,7 +28,7 @@ monitors:
   - id: Banner-c0despace
     name: 导航页
     description: '导航页'
-    url: 'https://banner.c0despace.uk'
+    url: 'https://banner.c0despace.uk/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
@@ -36,7 +37,7 @@ monitors:
   - id: Github-Blog
     name: Github 博客
     description: 'Github 博客'
-    url: 'https://zywj0han9.github.io'
+    url: 'https://zywj0han9.github.io/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
@@ -45,7 +46,7 @@ monitors:
   - id: CF-Blog-zywj0han9
     name: Cloudflare 博客
     description: 'Cloudflare 博客'
-    url: 'https://blog.zywj0han9.win'
+    url: 'https://blog.zywj0han9.win/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
