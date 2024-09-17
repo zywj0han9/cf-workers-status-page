@@ -17,15 +17,6 @@ settings:
   
 monitors:
 
-  - id: Tmpmail-code-tech # unique identifier
-    name: 临时邮箱
-    description: '临时邮箱' # default=empty
-    url: 'https://mail.code-tech.us.kg/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    linkable: true # allows the title to be a link, default=true
-    followRedirect: false # should fetch follow redirects, default=false
-
   - id: Banner-c0despace
     name: 导航页
     description: '导航页'
@@ -35,6 +26,24 @@ monitors:
     linkable: true # allows the title to be a link, default=true
     followRedirect: false # should fetch follow redirects, default=false
 
+  - id: Tmpmail-code-tech # unique identifier
+    name: 临时邮箱
+    description: '临时邮箱' # default=empty
+    url: 'https://mail.code-tech.us.kg/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    linkable: true # allows the title to be a link, default=true
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: Git-Proxy
+    name: Github 加速
+    description: 'Github 加速'
+    url: 'https://git.c0despace.uk/'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+    followRedirect: false # should fetch follow redirects, default=false
+    
   - id: Github-Blog
     name: Github 博客
     description: 'Github 博客'
@@ -52,3 +61,4 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
     followRedirect: false # should fetch follow redirects, default=false
+    
