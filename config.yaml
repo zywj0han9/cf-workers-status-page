@@ -17,7 +17,7 @@ settings:
   
 monitors:
 
-  - id: Banner-c0despace
+  - id: Banner
     name: 导航页
     description: '导航页'
     url: 'https://banner.c0despace.uk/'
@@ -26,10 +26,10 @@ monitors:
     linkable: true # allows the title to be a link, default=true
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: Tmpmail-code-tech # unique identifier
+  - id: Tmpmail # unique identifier
     name: 临时邮箱
     description: '临时邮箱' # default=empty
-    url: 'https://mail.code-tech.us.kg/' # URL to fetch
+    url: 'https://mail.c0despace.uk/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     linkable: true # allows the title to be a link, default=true
